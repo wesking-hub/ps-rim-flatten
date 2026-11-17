@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  CEP 调试清单。配合 HKCU\SOFTWARE\Adobe\CSXS.11 的 PlayerDebugMode=1，
+  扩展可以直接从 %APPDATA%\Adobe\CEP\extensions\ 加载，无需签名打包。
+
+  Id 必须与 manifest.xml 里的 Extension Id 一致（这是 CEP 的匹配规则）。
+  这里把 bundle id 也列上，避免因匹配规则差异漏掉。
+-->
+<ExtensionList>
+  <Extension Id="com.local.rimflatten.cep.panel">
+    <HostList>
+      <Host Name="PHXS" Port="8088"/>
+      <Host Name="PHSP" Port="8088"/>
+    </HostList>
+  </Extension>
+  <Extension Id="com.local.rimflatten.cep">
+    <HostList>
+      <Host Name="PHXS" Port="8088"/>
+      <Host Name="PHSP" Port="8088"/>
+    </HostList>
+  </Extension>
+</ExtensionList>

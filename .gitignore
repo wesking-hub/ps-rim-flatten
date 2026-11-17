@@ -1,0 +1,10 @@
+# Only production release files are tracked in this workspace.
+/*
+!/.gitignore
+!/README.md
+!/requirements.txt
+!/chajian/
+**/__pycache__/
+**/*.pyc
+**/node_modules/
+**/*.bak
